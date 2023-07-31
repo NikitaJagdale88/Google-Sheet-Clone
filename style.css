@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding-top: 4px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%; 
+}
+
+button{
+    background: transparent;
+    font-size: 15px;
+    font-weight:50;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+label{
+    padding-top: 10px;
+    color: #131c35;
+    font-size: 15px;
+    font-weight:50;
+}
+
+
+.sheet-div{
+    
+    border-radius:2px solid;
+}
+
+.fisrt{
+    border-right: 2px solid #72819033;
+    height: 30px;
+}
+
+.second{
+    border-right: 2px solid #72819033;
+    height: 30px;
+}
+
+.third{
+    /* border-right: 2px solid #72819033;  */
+    height: 30px;
+   
+}
+
+.third{
+    margin-top: 6px;
+}
+
+.fourth{
+    margin-top: 6px;  
+}
+
+
+.fifth{
+    border-right: 2px solid #72819033;
+    height: 30px;   
+}
+
+.six{
+    border-right: 2px solid #72819033;
+    height: 30px;
+}
+
+.seven{
+    border-right: 2px solid #72819033;
+    height: 30px;
+}
+
+button:hover{
+   background-color:rgb(169, 196, 207);
+}
+
+button:focus{
+   color: grey;
+}
+div{
+    display: inline-block;
+}
+.section{
+    background-color: rgb(206, 217, 222);
+    height: 25%;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    display: inline-block !important;
+    padding: 0 4px;
+}
+img{
+    height: 70px;
+    width: 80px;
+}
+
+table{
+    border-collapse: collapse;
+    width: auto;
+    overflow-x: auto;
+}
+
+th,
+td {
+    min-width: 80px;
+    border: 1px solid #333;   
+}
+
+tr{
+    line-height: 20px;
+}
+
+td:focus {
+    outline: none;
+    /* add your own color */
+}
+
+#italics-btn{
+    font-style: italic;
+    font-weight: 900;
+}
+
+#bold-btn{
+    font-weight: 900;
+}
+
+
+#underline-btn{
+    font-weight: 900;
+    text-decoration: underline;
+}

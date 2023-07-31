@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google sheet clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main">
+        <div class="imges">
+            <img src="https://lh3.ggpht.com/e3oZddUHSC6EcnxC80rl_6HbY94sM63dn6KrEXJ-C4GIUN-t1XM0uYA_WUwyhbIHmVMH=w300" alt="image">
+            
+        </div>
+        <div>
+            <h1>Untitled spreadsheet</h1>
+            <button>File</button>
+            <button>Edit</button>
+            <button>View</button>
+            <button>Insert</button>
+            <button>Format</button>
+            <button>Data</button>
+            <button>Tools</button>
+            <button>Extensions</button>
+            <button>Help</button>
+        </div>
+    </header>
+    <div class="section">
+    <div class="fisrt box">
+        <button id="bold-btn">B</button>
+        <button id="italics-btn">I</button>
+        <button id="underline-btn">U</button>
+    </div>
+    <div class="second box">
+        <button id="left-align">left</button>
+        <button id="center-align">center</button>
+        <button id="right-align">right</button>
+    </div>
+    <div class="third box">
+        <select id="font-size">
+            <option value="14px">14</option>
+            <option value="16px">16</option>
+            <option value="18px">18</option>
+            <option value="20px">20</option>
+            <option value="22px">22</option>
+        </select>
+    </div>
+   <div class="fourth box">
+    <select id="font-style">
+        <option value="serif">Serif</option>
+        <option value="sans-serif">Sans Serif</option>
+        <option value="cursive">Cursive</option>
+        <option value="monospace">Monospace</option>
+    </select>
+   </div>
+    
+    <div class="fifth box">
+        <button id="cut-button">Cut</button>
+        <button id="copy-button">Copy</button>
+        <button id="paste-button">Paste</button>
+    </div>
+    
+    <!-- bgColor -->
+   <div class="six box">
+    <label for="bgColor">Bg Color</label>
+    <input type="color" id="bgColor"/>
+   </div>
+
+    <!-- textColor -->
+   <div class="seven box">
+    <label for="textColor">text Color</label>
+    <input type="color" id="textColor"/>
+   </div>
+
+    <div class="eight box">
+        <button id="add-sheet-button">Add sheet</button>
+        <button onclick="downloadJson()">Download</button>
+        <input type="file" id="jsonFile" accept=".json"/>
+    </div>
+    
+</div>
+    <h3 id="sheet-no">Sheet No - 1</h3>
+    <div class="sheet-div" id="button-container">
+        <button id="sheet-1" onclick="viewSheet(event)">Sheet 1</button>
+    </div>
+    
+    
+    <table id="my-table">
+        <thead>
+            <tr id="table-heading-row">
+                <th id="current-cell">No cell</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- <tr>
+                <th>1</th>
+                how many td? ->26
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+        </tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+<!--matrix -> currentSheet  -->
+
+<!-- matrix was holding sheet 1 -->
+
+<!-- make cleanup function for table because we are 
+using it 3 times -->
