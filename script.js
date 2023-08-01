@@ -286,12 +286,6 @@ function downloadJson() {
 
 // 14 -> 22 (you triggered a change event)
 
-// [ 
-//  [{},{}],
-//  [{},{}],
-//  [{},{}],
-// ]
-
 // A2
 
 // 1st row, col -> 0th
@@ -313,14 +307,6 @@ function downloadJson() {
 
 // constant operation
 // 2d matrix
-
-// both the contest discussion
-// promises extra class
-// call apply & bind
-
-// 7:45 is doubt time
-// kudos to Diptendu
-
 
 // visible table (user visual memory)
 // virtual memory (2d matrix)
